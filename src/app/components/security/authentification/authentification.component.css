@@ -1,0 +1,17 @@
+.formContainer
+{
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.formContainer .formContainerLeft{
+  /* border: 1px solid; */
+  background-image: url('https://img.freepik.com/photos-gratuite/bouchent-portrait-jolie-jeune-femme-isolee_273609-36519.jpg?size=626&ext=jpg&ga=GA1.1.869340897.1689281166&semt=sph');
+  background-position: center;
+  background-size: cover;
+}
+
+.formContainer .formContainerRight{
+  /* border: 1px solid; */
+
+}

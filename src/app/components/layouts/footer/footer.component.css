@@ -1,0 +1,91 @@
+.Footer_Container {
+  background-color: #262626;
+  min-height: 550px;
+  color: white;
+  width: 100%;
+}
+
+.Section_Footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* gap: 15px; */
+}
+
+.Section_Footer p {
+  max-width: 200px;
+}
+
+.Section_Footer img {
+  width: 30px;
+  height: 30px;
+}
+
+.Section_Footer .Section_Footer_logo i {
+  background-color: white;
+  color: #0E918C;
+  padding: 0.4em;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.Section_Footer_Newsletters {
+  margin: 0 auto;
+  background-color: #0E918C;
+  width: 75%;
+  /* min-height: 100px; */
+  padding: 2em;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.Section_Footer_Containt {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.Section_Footer_Newsletters_Input input {
+  width: 300px;
+  height: 45px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+.Section_Footer_Newsletters_Input button {
+  width: 100px;
+  background-color: black;
+  color: white;
+  padding: 0.6em;
+  border: none;
+  border-radius: 8px;
+  margin-left: 15px;
+}
+
+.Section_Footer_Newsletters_Input input::placeholder {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.Copyright {
+  text-align: center;
+}
+
+.Copyright i {
+  color: #0E918C;
+}
+
+.Section_Footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.Section_Footer a:hover {
+  color: #0E918C;
+}
+
+/*----------------- Fin Section Footer   ----------------------------*/

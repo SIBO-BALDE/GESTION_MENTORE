@@ -1,0 +1,104 @@
+.container {
+  display: grid;
+  grid-template-columns: 90% 5%;
+  gap: 5px;
+  margin-top: 190px;
+}
+
+.Card_Mentor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  /* gap:15px; */
+  column-gap: 20px;
+}
+
+.card1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 550px;
+  height: 300px;
+}
+
+.section_left img {
+  width: 300px;
+  height: 300px;
+}
+
+.section_right {
+  width: 250px;
+  height: 300px;
+  padding: 1.5em;
+}
+
+.section_right button {
+  background-color: #0E918C;
+  color: white;
+  min-width: 180px;
+}
+
+#prop {
+  font-weight: bold;
+}
+
+.btn-section {
+  display: flex;
+}
+
+.btn1 {
+  background-color: #262626;
+  border-radius: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0.5em;
+  color: white;
+}
+
+.btn2 {
+  background-color: white;
+  border-radius: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0.5em;
+}
+
+.section_header {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.section_header {
+  margin-right: 150px;
+}
+
+.section_search input {
+  padding: 0.4em;
+}
+
+.section_search input {
+  width: 370px;
+}
+
+.section_search button {
+  width: 100px;
+  border: none;
+  background-color: black;
+  padding: 0.5em;
+  margin-left: 2px;
+  color: white
+}
+
+.container_right {
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 200px;
+  height: 500px;
+  position: sticky;
+  top: 80px;
+  /* margin-right: 80px; */
+  /* wipdth: 150px; */
+}

@@ -1,0 +1,51 @@
+<div class="mainContent">
+  <div class="mainContentTop">
+    <div class="logo">
+      <img routerLink="acceuil-admin" src="assets/logo-white.png" alt="" />
+    </div>
+  </div>
+  <div class="mainContentMiddle">
+    <ul class="mainContentMiddleMenu mt-5 list-unstyled">
+      <li
+        routerLink="acceuil-admin"
+        routerLinkActive="activeMenu"
+        class="menuItem"
+      >
+        <i class="bx bxs-dashboard me-4 icon"></i>Tableau de bord
+      </li>
+      <li
+        routerLink="dashboard-admin-mentor"
+        routerLinkActive="activeMenu"
+        class="menuItem"
+      >
+        <i class="bx bxs-user-rectangle me-4 icon"></i>Gestion des mentors
+      </li>
+      <li
+        routerLink="dashboard-admin-mentores"
+        routerLinkActive="activeMenu"
+        class="menuItem"
+      >
+        <i class="bx bxs-user me-4"></i>Gestion des mentorés
+      </li>
+      <li
+        routerLink="dashboard-admin-metiers"
+        routerLinkActive="activeMenu"
+        class="menuItem"
+      >
+        <i class="bx bxs-briefcase-alt me-4 icon"></i>Gestion des métiers
+      </li>
+      <li
+        routerLink="dashboard-admin-evenement"
+        routerLinkActive="activeMenu"
+        class="menuItem"
+      >
+        <i class="bx bxs-calendar-event me-4 icon"></i>Gestion des évenements
+      </li>
+    </ul>
+  </div>
+  <div class="mainContentBottom">
+    <div class="logout p-1 ps-3">
+      <i class="bx bx-log-out-circle me-3"></i><button (click)="logout()">Se deconnecter</button>
+    </div>
+  </div>
+</div>

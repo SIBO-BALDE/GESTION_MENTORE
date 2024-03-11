@@ -1,0 +1,292 @@
+<div class="mainContent">
+  <!-- les cards -->
+  <div class="mainContentTop ps-3 pe-3">
+    <div class="mainContentTopItem p-3">
+      <h4 class="text-white fw-bold">Nombre de session organisées</h4>
+      <div class="d-flex justify-content-between">
+        <span class="fs-1 text-white">35</span>
+        <span class="fs-1 text-white"><i class="bx bxs-show"></i></span>
+      </div>
+    </div>
+    <div class="mainContentTopItem p-3">
+      <h4 class="text-white fw-bold">Nombre de mentorés</h4>
+      <div class="d-flex justify-content-between">
+        <span class="fs-1 text-white">35</span>
+        <span class="fs-1 text-white"><i class="bx bxs-show"></i></span>
+      </div>
+    </div>
+    <div class="mainContentTopItem p-3">
+      <h4 class="text-white fw-bold">Nombre sessions achevées</h4>
+      <div class="d-flex justify-content-between">
+        <span class="fs-1 text-white">35</span>
+        <span class="fs-1 text-white"><i class="bx bxs-show"></i></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainContentBottom ps-3 pe-3">
+    <!-- la liste des derniers sessions -->
+    <div class="mainContentBottomLeft p-3 ">
+      <h3 class="mainContentBottomLeftTop">Les dernieres sessions</h3>
+      <!-- les card -->
+      <div class="mainContentBottomLeftMiddle" >
+        <!-- card1 -->
+        <div class="card mb-3" id="content-card" style="background-color: #0E918C !important; ">
+          <div class="row g-0" style="height: 100%;">
+            <div class="col-md-4" style="height: 100%;" id="content-img-card">
+              <img src="https://img.freepik.com/photos-gratuite/groupe-etude-du-peuple-africain_23-2149156427.jpg?size=626&ext=jpg&uid=R91565924&ga=GA1.1.822484715.1690572046&semt=ais" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" style="margin-left: 30px;">
+                <h4 class="card-title" style="color: white;">Lundi le 17/9/2024</h4>
+                <p class="card-text" style="color: white;">En ligne</p>
+                <p class="card-text" style="color: white;">Avec Mr malick Fall</p>
+                <!-- <div><button class="btn-content-detail" >voir plus</button></div> -->
+                <button
+            type="button"
+            class="btn text-white"
+            data-bs-toggle="modal"
+            data-bs-target="#detailMentor"
+            style="background-color: var(--color-primary); border: 1px solid white;">
+          voir plus
+          </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="card " id="content-card" style="background-color: #0E918C !important; ">
+          <div class="row g-0" style="height: 100%;">
+            <div class="col-md-4" style="height: 100%;" id="content-img-card">
+              <img src="https://img.freepik.com/photos-gratuite/groupe-etude-du-peuple-africain_23-2149156427.jpg?size=626&ext=jpg&uid=R91565924&ga=GA1.1.822484715.1690572046&semt=ais" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" style="margin-left: 30px;">
+                <h4 class="card-title" style="color: white;">Lundi le 17/9/2024</h4>
+                <p class="card-text" style="color: white;">En ligne</p>
+                <p class="card-text" style="color: white;">Avec Mr malick Fall</p>
+                <!-- <div><button class="btn-content-detail" >voir plus</button></div> -->
+                <button
+                type="button"
+                class="btn text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#detailMentor"
+                style="background-color: var(--color-primary); border: 1px solid white;">
+              voir plus
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- le buttons -->
+      <div class="mainContentBottomLeftBottom mt-4">
+        <button
+          routerLink="/dashboard-mentor/gestion-session"
+          class="btn w-100"
+          style="color: white; background-color: var(--color-primary)"
+        >
+          Voir les sessions
+        </button>
+      </div>
+    </div>
+    <div class="mainContentBottomRight p-3">
+      <h3>La liste des derniers inscrits</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Email</th>
+            <th scope="col">Inscrit à</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>exemple@gmail.com</td>
+            <td>Le 12/12/2023</td>
+          </tr>
+          <tr>
+            <td>exemple@gmail.com</td>
+            <td>Le 12/12/2023</td>
+          </tr>
+          <tr>
+            <td>exemple@gmail.com</td>
+            <td>Le 12/12/2023</td>
+          </tr>
+          <tr>
+            <td>exemple@gmail.com</td>
+            <td>Le 12/12/2023</td>
+          </tr>
+          <tr>
+            <td>exemple@gmail.com</td>
+            <td>Le 12/12/2023</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="mainContentBottomRightBottom">
+        <button
+          routerLink="/dashboard-mentor/gestion-mentore"
+          class="btn w-100"
+          style="color: white; background-color: var(--color-primary)"
+        >
+          Voir les mentores
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal detail -->
+<div
+  class="modal fade modal-lg"
+  id="detailEvenement"
+  tabindex="-1"
+  aria-labelledby="detailEvenementLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="detailEvenementLabel">Modal title</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body modalContent">
+        <div class="modalContentTop">
+          <div
+            class="modalContentTopImage"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+              background-position: center;
+              background-size: cover;
+              border-radius: 8px;
+            "
+          ></div>
+          <div class="modalContentTopDescription">
+            <span class="fs-5 fw-bold" style="color: var(--color-primary)"
+              >Description</span
+            >
+            <p>
+              Le percepteur des contributions, l’homme des impositions
+              indirectes, l’officier de gendarmerie et deux ou trois autres
+              fonctionnaires publics arrivèrent avec leurs femmes. Ils furent
+              suivis de quelques libéraux riches. On annonça le dîner. Julien,
+              déjà fort mal disposé, vint à penser que, de l’autre côté du mur
+              de la salle à manger
+            </p>
+          </div>
+        </div>
+        <div class="modalContentBottom">
+          <div class="modalContentBottomItems">
+            <span class="fs-5 fw-bold" style="color: var(--color-primary)"
+              >Nom</span
+            >
+            <p>Le percepteur</p>
+          </div>
+          <div class="modalContentBottomItems">
+            <span class="fs-5 fw-bold" style="color: var(--color-primary)"
+              >Lieu</span
+            >
+            <p>Le percepteur</p>
+          </div>
+          <div class="modalContentBottomItems">
+            <span class="fs-5 fw-bold" style="color: var(--color-primary)"
+              >Date</span
+            >
+            <p>Le percepteur</p>
+          </div>
+          <div class="modalContentBottomItems">
+            <span class="fs-5 fw-bold" style="color: var(--color-primary)"
+              >Mentor</span
+            >
+            <p>Le percepteur</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button
+          type="button"
+          class="btn text-white w-25"
+          data-bs-dismiss="modal"
+          style="background-color: var(--color-primary)"
+        >
+          Fermer
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modale detail session -->
+<div
+    class="modal fade modal-lg"
+    id="detailMentor"
+    tabindex="-1"
+    aria-labelledby="detailMentorLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1
+            class="modal-title fs-4 fw-semibold text-center w-100"
+            id="detailMentorLabel"
+          >
+            Detail session
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body modalContent" style="margin-left: 220px;">
+          <div class="modalContentTop">
+            <div class="modalContentTopItems">
+              <div class="d-flex justify-content-between ">
+                <div class="modalContentBottomItem">
+                    <span class="fs-5 fw-bold" style="color: var(--color-primary)">Theme</span>
+                    <p>Gestion projet</p>
+                  </div>
+                  <div class="modalContentBottomItem">
+                    <span class="fs-5 fw-bold" style="color: var(--color-primary)">Mentoré</span>
+                    <p>Fall Bah</p>
+                  </div>
+
+              </div>
+             <div class="d-flex  justify-content-between ">
+                <div class="modalContentBottomItem">
+                    <span class="fs-5 fw-bold" style="color: var(--color-primary)"
+                      >Lieu</span
+                    >
+                    <p>Pikine</p>
+                  </div>
+                  <div class="modalContentBottomItem">
+                    <span class="fs-5 fw-bold" style="color: var(--color-primary)"
+                      >Date</span
+                    >
+                    <p> 17/11/2024</p>
+                  </div>
+
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button
+            type="button"
+            class="btn text-white w-25"
+            data-bs-dismiss="modal"
+            style="background-color: var(--color-primary)"
+          >
+            Fermer
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

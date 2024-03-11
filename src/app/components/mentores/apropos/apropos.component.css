@@ -1,0 +1,162 @@
+.Container_action_Contact {
+  background-image: url("assets/apropos.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  margin-top: 150px;
+}
+
+.Container_action_Contact h1 {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 170px;
+  font-weight: bold;
+}
+
+.Section_realisation {
+  position: relative;
+  float: right;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 100px;
+  width: 450px;
+  min-height: auto;
+  margin-top: 130px;
+  border-radius: 20px;
+  padding: 1em;
+}
+
+.section_contenu {
+  margin-top: 20px;
+}
+
+.Section_realisation h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.historique {
+  margin-top: 100px;
+}
+
+.btn-section {
+  display: flex;
+}
+
+.btn1 {
+  background-color: #262626;
+  border-radius: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0.5em;
+  color: white;
+}
+
+.btn2 {
+  background-color: white;
+  border-radius: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0.5em;
+}
+
+.section_mission {
+  padding: 2em;
+  max-width: 950px;
+  text-align: center;
+}
+
+.section_stat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.section_stat img {
+  width: 130px;
+}
+
+.section_mission h4 {
+  margin-top: 20px;
+}
+
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  min-height: 100vh;
+  padding: 100px 0;
+  font-family: Jost;
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 100%;
+  height: auto;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px;
+  color: black;
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+
+  .timeline-middle {
+    position: relative;
+    background: black;
+    width: 3px;
+    height: 100%;
+  }
+
+  .main-middle {
+    opacity: 0;
+  }
+
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #0E918C;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}

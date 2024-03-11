@@ -1,0 +1,13 @@
+.mainContent {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.mainContentRight {
+  display: grid;
+  grid-template-rows: 10% 88%;
+  gap: 2%;
+}
+

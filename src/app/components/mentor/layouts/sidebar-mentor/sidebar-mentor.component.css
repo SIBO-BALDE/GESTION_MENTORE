@@ -1,0 +1,93 @@
+.mainContent {
+  /* border: 1px solid ; */
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-columns: 100%;
+  justify-content: space-between;
+  background-color: #0E918C;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.05);
+}
+
+.mainContentTop{
+  /* border: 1px solid; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.mainContentTop .logo{
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.mainContentTop .logo img{
+  height: 100%;
+  cursor: pointer;
+}
+
+.mainContentMiddle{
+  /* border: 1px solid ; */
+}
+
+.mainContentMiddle .mainContentMiddleMenu{
+  /* border: 1px solid; */
+  height: 60%;
+}
+
+.mainContentMiddle .mainContentMiddleMenu .menuItem{
+  /* border: 1px solid; */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.mainContentMiddle .mainContentMiddleMenu .menuItem:hover{
+  background-color: white;
+  color: var(--color-primary) !important;
+}
+
+.activeMenu{
+  background-color: white;
+  color: var(--color-primary) !important;
+}
+
+.mainContentMiddle .mainContentMiddleMenu .menuItem .icon{
+  font-size: 1.3rem;
+}
+
+.mainContentBottom{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: end;
+}
+
+.mainContentBottom .logout{
+  /* border: 2px solid; */
+  width: 100%;
+  height: 80%;
+  background-color: white;
+  color: var(--color-primary);
+  font-size: 1.3em;
+  font-weight: 500;
+
+}
+
+.mainContentBottom .logout button{
+  border: none;
+  height: 100%;
+  color: var(--color-primary);
+  background-color: transparent;
+}

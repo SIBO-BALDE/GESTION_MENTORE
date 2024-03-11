@@ -1,0 +1,22 @@
+/* ---------------Debut Section Contenu---------- */
+.titre {
+  font-weight: bold;
+}
+
+.Mention_Text_Mention {
+  margin-top: 40px;
+}
+
+.Container_Mention_Text {
+  margin-left: 100px;
+}
+
+@media screen and (max-width:700px) {
+  .Container_Mention_Text {
+    margin: 50px;
+  }
+}
+
+
+
+/*---------------------- Fin Section Contenu----------------*/

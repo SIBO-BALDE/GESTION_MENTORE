@@ -1,0 +1,54 @@
+.mainContent {
+  /* border: 1px solid; */
+  height: 100%;
+  display: grid;
+  grid-template-rows: 20% 65%;
+  gap: 2%;
+}
+
+.mainContent .mainContentTop {
+  /* border: 1px solid; */
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 5%;
+}
+
+.mainContent .mainContentTop .mainContentTopItem {
+  background-color: var(--color-primary);
+  border-radius: 8px;
+}
+
+li.paginationActiveItem a {
+  background-color: var(--color-primary) !important;
+  color: white !important;
+}
+
+ul.paginationItems li a {
+  color: black;
+}
+
+.modalContent {
+  width: 90%;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 2%;
+  margin: 0 auto;
+}
+
+.modalContent .modalContentTop {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4%;
+}
+
+.modalContentTopItems {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20%;
+  justify-content: center;
+  width: 80%;
+  justify-content: center;
+}

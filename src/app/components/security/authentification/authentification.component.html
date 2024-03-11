@@ -1,0 +1,198 @@
+<div
+  class="mainContent d-flex justify-content-center align-items-center"
+  style="height: 100vh; width: 100vw"
+>
+  <div
+    class="card formContainer"
+    style="height: 70%; width: 70%"
+    *ngIf="switchFormValue"
+  >
+    <div class="formContainerLeft"></div>
+    <div class="formContainerRight">
+      <div class="h-100 loginForm">
+        <div
+          class="container shadow py-3 h-100 d-flex justify-content-center align-items-center"
+        >
+          <div class="col-8">
+            <h1 class="text-center fw-bold mb-5">Connectez-vous</h1>
+            <form action="">
+              <div class="mb-3">
+                <label for="emailInput" class="form-label"
+                  >Adresse email:</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="emailInput"
+                  [(ngModel)]="emailLogin"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="passwordInput" class="form-label"
+                  >Mot de passe :
+                </label>
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  id="passwordInput"
+                  [(ngModel)]="passwordLogin"
+                />
+              </div>
+              <div class="btn-auth text-center">
+                <button
+                  type="submit"
+                  class="btn me-3 text-white"
+                  (click)="login()"
+                  style="background-color: var(--color-primary)"
+                >
+                  Se connecter
+                </button>
+                <button
+                  type="submit"
+                  class="btn me-3"
+                  (click)="switchForm()"
+                  style="color: var(--color-primary); border: solid thin"
+                >
+                  S'inscrire
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="card formContainer"
+    style="height: 70%; width: 70%"
+    *ngIf="!switchFormValue"
+  >
+    <div class="formContainerLeft"></div>
+    <div class="formContainerRight">
+      <div class="h-100 registerForm">
+        <div
+          class="container shadow py-3 h-100 d-flex justify-content-center align-items-center"
+        >
+          <div class="col-10">
+            <h1 class="text-center fw-bold mb-5">S'inscrire</h1>
+            <form action="">
+              <div class="col-12 d-flex justify-content-between">
+                <div class="mb-3 col-6">
+                  <label for="nomInput" class="form-label">Nom:</label>
+                  <input
+                    type="text"
+                    name="nomInput"
+                    class="form-control"
+                    id="nomInputInput"
+                    [(ngModel)]="nomRegister"
+                  />
+                </div>
+                <div class="mb-3 col-6 ms-3">
+                  <label for="prenomInput" class="form-label">Prenom : </label>
+                  <input
+                    type="text"
+                    name="prenomInput"
+                    class="form-control"
+                    id="prenomInput"
+                    [(ngModel)]="prenomRegister"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12 d-flex justify-content-between">
+                <div class="mb-3 col-6">
+                  <label for="telephoneInput" class="form-label"
+                    >Telephone:</label
+                  >
+                  <input
+                    type="tel"
+                    name="telephoneInput"
+                    class="form-control"
+                    id="telephoneInput"
+                    [(ngModel)]="telephoneRegister"
+                  />
+                </div>
+                <div class="mb-3 col-6 ms-3">
+                  <label for="statutInput" class="form-label">statut : </label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    name="statutInput"
+                    [(ngModel)]="statutRegister"
+                  >
+                    <option selected>Veuillez selectionner votre statut</option>
+                    <option value="eleve">Eleve</option>
+                    <option value="etudiant">Etudiant</option>
+                    <option value="professionnel">Professionnel</option>
+                    <option value="jeune_diplome">Jeune diplomé</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-12 d-flex justify-content-between">
+                <div class="mb-3 col-6">
+                  <label for="emailInput" class="form-label"
+                    >Adresse email:</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    id="emailInput"
+                    [(ngModel)]="emailRegister"
+                  />
+                </div>
+                <div class="mb-3 col-6 ms-3">
+                  <label for="passwordInput" class="form-label"
+                    >Mot de passe :
+                  </label>
+                  <input
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    id="passwordInput"
+                    [(ngModel)]="passwordRegister"
+                  />
+                </div>
+              </div>
+
+              <div class="">
+                <div class="mb-3 col-12 p-1">
+                  <label for="parcourInput" class="form-label">Parcours:</label>
+                  <textarea
+                    class="form-control"
+                    name="parcourInput"
+                    placeholder="veuillez nous parler un peu de vous"
+                    id="parcourInput"
+                    [(ngModel)]="parcourInputRegister"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="btn-auth text-center">
+                <button
+                  type="submit"
+                  class="btn me-3 text-white"
+                  (click)="register()"
+                  style="background-color: var(--color-primary)"
+                >
+                  S'inscrire
+                </button>
+                <button
+                  type="submit"
+                  class="btn me-3"
+                  (click)="switchForm()"
+                  style="color: var(--color-primary); border: solid thin"
+                >
+                  Se connecter
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

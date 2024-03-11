@@ -1,0 +1,15 @@
+:root {
+  --font-roboto: 'Roboto', sans-serif;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-primary: #0E918C; /* Remplacez cette valeur par la nuance de vert souhaitée */
+}
+
+html{
+  font-family: var(--font-roboto);
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
